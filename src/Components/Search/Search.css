@@ -1,0 +1,16 @@
+.search{
+    width:100%;
+    border: none;
+    text-decoration: none;
+    padding: 2%;
+    margin: 0 auto !important;
+} 
+.search-form{
+    border: 1px solid red;
+    border-radius: 40px;
+    padding:1% 2%;
+}
+.search-icon{
+    color: black;
+    padding: 2%;
+}

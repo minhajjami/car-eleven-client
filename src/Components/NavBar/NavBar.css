@@ -1,0 +1,15 @@
+.navbar-style {
+    background: transparent;
+    box-shadow: 0 0 10px lightgray;
+}
+.nav-link {
+    margin: 0 20px;
+    border-bottom: 5px solid white;
+}
+.nav-link:hover{
+    border-bottom: 5px solid crimson;
+}
+.logo {
+    font-weight: bolder;
+    font-family: "Pacifico", cursive;
+}

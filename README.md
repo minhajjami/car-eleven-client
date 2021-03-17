@@ -1,9 +1,11 @@
 # How to o run the project successfully
 
-☛ first go to your folder path by useing git bash where you want to clone this project 
+☛ Clone this repository
 
-☛ then use this commend $ git clone https://github.com/minhajjami/car-eleven-client.git
+☛ Then Run this command in CLI "npm install"
 
-☛ then use commend npm install
+☛ Run the project using "npm start" command.
 
-☛ then use commend npm start 
+# Car Eleven Web App
+✿✿✿[LIVE WEBSITE](https://car-shop-4427f.web.app/)
+✿✿✿ [</> Server Side Code](https://github.com/moshiuzzaman/car-shop-server.git)

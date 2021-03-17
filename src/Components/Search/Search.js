@@ -43,7 +43,7 @@ const Search = () => {
                 </form>
                 <Row>
                     {
-                        carFilter === false ? <p>loading...</p> : carFilter.length === 0 ? <p>NO CAR FOUND </p> : currentCars.map((ac, index) => <Cars car={ac} key={index}></Cars>)
+                        carFilter === false ? <p className="text-center">Loading...</p> : carFilter.length === 0 ? <p className="text-center">NO CAR FOUND </p> : currentCars.map((ac, index) => <Cars car={ac} key={index}></Cars>)
                     }
                 </Row>
                 <Pagination carsPerPage={carsPerPage} totalCars={carFilter.length} paginate={paginate} />

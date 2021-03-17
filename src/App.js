@@ -6,6 +6,7 @@ import {
 
 import AddCar from "./Components/AddCar/AddCar";
 import CarDetails from './Components/Cars/CarDetails';
+import Footer from "./Components/Footer/Footer";
 import Home from './Components/Home/Home';
 import NavBar from "./Components/NavBar/NavBar";
 import NotFound from "./Components/NotFound/NotFound";
@@ -28,6 +29,7 @@ function App() {
           <NotFound />
         </Route>
       </Switch> 
+      <Footer/>
     </Router>
   );
 }

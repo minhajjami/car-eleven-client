@@ -14,7 +14,8 @@ const Cars = ({ car }) => {
         history.push(`/details/${_id}`)
     }
 
-    const handleReview = () => {
+    const handleReview = (e) => {
+        e.preventDefault()
         fetch(`https://thawing-dawn-65817.herokuapp.com/review/${_id}`, {
             method: 'PATCH',
             body: JSON.stringify({ review }),

@@ -30,7 +30,9 @@ const CarDetails = () => {
     }
     const [modalShow, setModalShow] = useState(false);
     const { register, handleSubmit } = useForm();
+    
     const onSubmit = (data, e) => {
+        e.preventDefault()
         const formData = new FormData()
         formData.append('carName', data.carName)
         formData.append('price', data.price)
@@ -92,7 +94,7 @@ const CarDetails = () => {
                         {
                             carDetails !== undefined && <div>
                                 <Form onSubmit={handleSubmit(onSubmit)}>
-                                    <Form.Row className='dashboard-admin-form'>
+                                    <Form.Row>
                                         <Form.Group as={Col} md='6' controlId="formGridName">
                                             <Form.Label>Car name</Form.Label>
                                             <Form.Control type="text" defaultValue={carDetails.carName} name='carName' placeholder="Car Name" ref={register({ required: true })} />
@@ -106,7 +108,7 @@ const CarDetails = () => {
                                             <Form.Control name='description' defaultValue={carDetails.description} placeholder="Enter Car Details" as="textarea" rows="3" ref={register({ required: true })} />
                                         </Form.Group>
                                     </Form.Row>
-                                    <Button className="Button-add-car-form mb-5" type="submit">UpdateDetails</Button>
+                                    <Button className="mb-5" type="submit">Update</Button>
                                 </Form>
                             </div>
                         }
